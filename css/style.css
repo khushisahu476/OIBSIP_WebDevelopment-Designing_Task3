@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00ff99, #00bfff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.converter-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffdd57;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+input, select {
+    background: #222;
+    color: white;
+}
+
+button {
+    background: #ffdd57;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffaa00;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #00ff99;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
